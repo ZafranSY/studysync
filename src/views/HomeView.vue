@@ -74,8 +74,8 @@ export default {
   methods: {
     onlogin() {
       var data = new FormData();
-      data.append('username' : this.admin.username);
-      data.append('password' : this.admin.password);
+      data.append("username", this.admin.username);
+      data.append("password", this.admin.password);
       axios.post("");
       alert("im working");
     },
