@@ -23,8 +23,11 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-###Why use this practice (API + JSON)?
-Separation of Concerns (Frontend vs Backend):
+
+### Why use this practice (API + JSON)?
+
+
+## 1.Separation of Concerns (Frontend vs Backend):
 
 In your setup, the frontend (Vue.js) handles the user interface and makes requests to the backend (Perl), which retrieves the data from the database and returns it in JSON format.
 
@@ -52,13 +55,16 @@ fetch('http://localhost/getUser?id=1')
   });
 This method offers more flexibility and makes it easier to build dynamic user interfaces.
 
-Better Performance (SPA):
+## 2.Better Performance (SPA):
 
 Since you're using an SPA, the app loads once and then dynamically updates only the parts of the page that need to change. This minimizes the need for full page reloads, making your website feel faster and more interactive.
-Decoupled Architecture (Backend and Frontend Separation):
 
+## 3.Decoupled Architecture (Backend and Frontend Separation):
 This separation allows your backend to be more independent of your frontend. For example, you can switch your frontend technology (e.g., Vue.js, React, Angular) without needing to change your backend.
 You could even change the backend technology (e.g., switching from Perl to Python, Node.js, or another language) without affecting the frontend too much.
-API Reusability:
+
+## 4.API Reusability:
 
 An API provides a standardized way for your application to access data, which means other services or applications (like mobile apps, other websites, etc.) can also use the same API without changing how data is handled.
+
+
