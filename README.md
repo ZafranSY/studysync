@@ -22,7 +22,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-Why use this practice (API + JSON)?
+
+###Why use this practice (API + JSON)?
 Separation of Concerns (Frontend vs Backend):
 
 In your setup, the frontend (Vue.js) handles the user interface and makes requests to the backend (Perl), which retrieves the data from the database and returns it in JSON format.
